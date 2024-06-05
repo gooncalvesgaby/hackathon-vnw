@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return(
     <>
+    <h1>Ola!!</h1>
     <Header/>
     <Main/>
     <Footer/>
