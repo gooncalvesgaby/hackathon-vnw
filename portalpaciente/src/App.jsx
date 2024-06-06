@@ -1,8 +1,6 @@
 import React from "react"
 import {createGlobalStyle} from "styled-components"
-
-import Login from "./Components/Login/login.jsx"
-
+import Navegacao from "./Components/Navegacao.jsx"
 
 
 const GlobalStyle = createGlobalStyle`
@@ -17,7 +15,7 @@ function App() {
   return(
     <>
     <GlobalStyle/>
-    <Login/>
+    <Navegacao/>
     </>
   )
   
