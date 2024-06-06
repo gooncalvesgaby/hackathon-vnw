@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Header = styled.header`
     width:100vw;
     background-color: #78B4D6;
-    height:10vw;
+    height:12vw;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
