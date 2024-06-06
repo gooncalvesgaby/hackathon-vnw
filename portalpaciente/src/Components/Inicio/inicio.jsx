@@ -1,6 +1,6 @@
 import React from "react"
 import * as S from "./inicioStyle.jsx"
-import Logo from "../../assets/logo-inicio.png"
+import Logo from "../../assets/logo-ds.png"
 import Ajuda from "../../assets/ajuda.png"
 import Perfil from "../../assets/perfil.png"
 
