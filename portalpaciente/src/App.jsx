@@ -1,6 +1,7 @@
 import React from "react"
 import {createGlobalStyle} from "styled-components"
-import Inicio from "./Components/Inicio/inicio.jsx"
+
+import Login from "./Components/Login/login.jsx"
 
 
 
@@ -16,7 +17,7 @@ function App() {
   return(
     <>
     <GlobalStyle/>
-    <Inicio/>
+    <Login/>
     </>
   )
   
