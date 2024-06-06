@@ -7,13 +7,11 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 function Navegacao(){
     return(
         <BrowserRouter>
-
-        <button><Link to= "/Inicio"> Inicio</Link></button>
-
-        <Routes>
-            <Route path="/" element={<Login />} />
-            <Route path="/Inicio" element={<Inicio/>} />
-        </Routes>
+            <Routes>
+                <Route path="/" element={ <Inicio />} />
+                <Route path="Cadastro" element={ <Cadastro/> } />
+                <Route path="Login" element={ <Login/>} />
+            </Routes>
         </BrowserRouter>
     )
 }

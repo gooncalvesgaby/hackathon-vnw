@@ -25,3 +25,38 @@ export const Icone = styled.img`
     height: 3rem;
     margin: 0.5rem;
 `
+
+export const Nav = styled.nav`
+    width: 100vw;
+    height: 8vh;
+    background-color: #548083;
+    color: white;
+`
+
+export const Ul = styled.ul`
+    display: flex;
+    height: 8vh;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    font-size: 1.5rem;
+`
+export const Main = styled.section`
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+`
+
+export const Portal = styled.section`
+    display: flex;
+    width: 35vw;
+    height: 80vh;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    align-items: center;
+    padding: 3rem;
+`
+export const categoria = styled.img`
+    width: 5rem;
+    height: 5rem;
+`
