@@ -1,5 +1,7 @@
 import React from "react"
 import {createGlobalStyle} from "styled-components"
+import Inicio from "./Components/Inicio/inicio.jsx"
+
 
 
 const GlobalStyle = createGlobalStyle`
@@ -14,6 +16,7 @@ function App() {
   return(
     <>
     <GlobalStyle/>
+    <Inicio/>
     </>
   )
   
