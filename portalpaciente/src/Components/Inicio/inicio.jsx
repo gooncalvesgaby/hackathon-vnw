@@ -8,12 +8,14 @@ import exame from "../../assets/exame.png"
 import ficha from "../../assets/ficha.png"
 import teste from "../../assets/teste.png"
 import vacina from "../../assets/vacina.jpg"
+import Header from "../Header/Header.jsx"
 
 
 
 function Inicio() {
     return(
         <section>
+        <Header/>
         <S.Nav>
             <S.Ul>
                 <li>Sobre</li>
