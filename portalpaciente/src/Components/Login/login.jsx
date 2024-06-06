@@ -43,38 +43,14 @@ function Login() {
         <main>
             <S.Section style={{ backgroundImage: `url(${Portal})` }}>
 
-<<<<<<< HEAD
-            <S.Div>
-            <img src={Logo} alt="Logo Dev Amaro"/>
-            </S.Div>
-
-            <S.Section style={{backgroundImage:`url(${Portal})`}}>
-                
-            <S.Form>
-                <h1>Acesse seu Login</h1>
-                <div>
-                    <input type="text"
-                    placeholder="CPF"/>    
-                </div>
-                <div>
-                    <input type="password"
-                    placeholder="Senha"/>
-                </div>
-               
-                <div>
-                        <label>
-                            <input type="checkbox"/>Lembre de mim</label>
-                            <a href="#">Esqueceu a senha</a>
-=======
                 <S.Form  onSubmit={loginForm}>
                     <h1>Acesse seu Login</h1>
-                    <div>
-                        <input value={cpf} type="text" placeholder="CPF" onChange={handleCpf}/>
->>>>>>> 817011ce26912fdd1defc52ef334c11ddb437ecf
-                    </div>
-                    <div>
-                        <input value={password} type="password" placeholder="Senha" onChange={handlePassword}/>
-                    </div>
+                    
+                        <S.Input value={cpf} type="text" placeholder="CPF" onChange={handleCpf}/>
+                    
+                    
+                        <S.Input value={password} type="password" placeholder="Senha" onChange={handlePassword}/>
+                    
                     <div>
                         <label>
                             <input  type="checkbox" />Lembre de mim
