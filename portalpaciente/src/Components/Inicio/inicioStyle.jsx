@@ -37,7 +37,7 @@ export const Portal = styled.section`
 
 export const button = styled.button`
 `
-export const indice = styled.div`
+export const indice = styled.button`
     background-color: white;
     width: 10rem;
     height: 8rem;
