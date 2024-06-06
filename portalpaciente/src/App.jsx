@@ -1,6 +1,6 @@
 import React from "react"
 import {createGlobalStyle} from "styled-components"
-import Navegacao from "../src/Components/Navegacao.jsx"
+import Navegacao from "./Components/Navegacao.jsx"
 
 
 

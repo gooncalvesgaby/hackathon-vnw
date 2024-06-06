@@ -25,28 +25,33 @@ function Inicio() {
         <S.Main>
             <S.Portal>
                 <h2>PORTAL DO PACIENTE</h2>
-                <div>
+                    <S.indice>
                     <S.categoria src={ficha} alt="" />
                     <p>AGENDAMENTO</p>
-                </div>
-                <div>
+                    </S.indice>
+                <S.indice>
                     <S.categoria  src={exame}alt="" />
                     <p>MINHAS CONSULTAS</p>
-                </div>
-                <div>
+                </S.indice>
+                <S.indice>
                     <S.categoria  src={acordo} alt="" />
                     <p>STATUS DO CONVÊNIO</p>
-                </div>
-                <div>
+                </S.indice>
+                <S.indice>
                     <S.categoria  src={teste} alt="" />
                 <p>RESULTADOS DE EXAMES</p>
-                </div>
+                </S.indice>
             </S.Portal>
             <section>
                 <img src={vacina} alt="" />
             </section>
         </S.Main>
+
+        <S.Footer>
+            <h3>©2024 Dev’s Amaro. Todos os direitos reservados.</h3>
+        </S.Footer>
         </section>
+
     )
 }
 
