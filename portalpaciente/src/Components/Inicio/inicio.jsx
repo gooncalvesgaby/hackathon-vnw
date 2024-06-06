@@ -9,22 +9,11 @@ import ficha from "../../assets/ficha.png"
 import teste from "../../assets/teste.png"
 import vacina from "../../assets/vacina.jpg"
 
-function Inicio(){
+
+
+function Inicio() {
     return(
         <section>
-        <S.Header>
-            <div>
-                <S.Logo src={Logo} alt="" />
-            </div>
-            <div>
-                <h1>CENTRAL DE ATENDIMENTO</h1>
-            </div>
-            <div>
-                <S.Icone src={Ajuda} alt="" />
-                <S.Icone src={Perfil} alt="" />
-            </div>
-        </S.Header>
-
         <S.Nav>
             <S.Ul>
                 <li>Sobre</li>

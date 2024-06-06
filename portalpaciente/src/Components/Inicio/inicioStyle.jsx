@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 export const Header = styled.header`
-    width:100%;
-    background-color: #4677B6;
+    width:100vw;
+    background-color: #78B4D6;
     height:13vw;
     display:flex;
     justify-content: space-evenly;

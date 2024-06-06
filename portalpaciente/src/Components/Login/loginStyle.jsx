@@ -8,8 +8,8 @@ border: solid red;
 background-color: #78B4D6;
 
 img {
-    height: 13vh;
-    margin-left: 2rem;
+height: 13vh;
+margin-left: 2rem;
 }
 `
 
