@@ -16,7 +16,7 @@ button{
     width: 25vw;
     height: 8vh;
     border-radius: 8px;
-    font-weight:900;
+    font-weight:800;
 }
 
 `
