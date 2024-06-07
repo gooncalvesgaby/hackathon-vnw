@@ -13,7 +13,8 @@ function Inicio() {
     const [openModal, setOpenModal] = useState(false)
 
     return(
-        <section>  
+    <>
+        <header>  
         <S.Nav>
             <S.Ul>
                 <li>Sobre</li>
@@ -21,6 +22,7 @@ function Inicio() {
                 <li>Contate-nos</li>
             </S.Ul>
         </S.Nav>
+        </header>
         <S.Main>
             <S.Portal>
                 <h2>PORTAL DO PACIENTE</h2>
@@ -42,15 +44,15 @@ function Inicio() {
                 <p>RESULTADOS DE EXAMES</p>
                 </S.indice>
             </S.Portal>
-            <section>
+            <S.Section>
                 <img src={vacina} alt="" />
-            </section>
+            </S.Section> 
         </S.Main>
 
         <S.Footer>
             <h3>©2024 Dev’s Amaro. Todos os direitos reservados.</h3>
         </S.Footer>
-        </section>
+        </>
 
     )
 }
