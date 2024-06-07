@@ -1,4 +1,4 @@
-import React from "react"
+import {useState} from "react"
 import * as S from "./inicioStyle.jsx"
 import Logo from "../../assets/logo-ds.png"
 import Ajuda from "../../assets/ajuda.png"
@@ -8,12 +8,15 @@ import exame from "../../assets/exame.png"
 import ficha from "../../assets/ficha.png"
 import teste from "../../assets/teste.png"
 import vacina from "../../assets/vacina.jpg"
-
+import Modal from "../Modal/modal.jsx"
 
 
 function Inicio() {
+
+    const [openModal, setOpenModal] = useState(false)
+
     return(
-        <section>
+        <section>  
         <S.Nav>
             <S.Ul>
                 <li>Sobre</li>
@@ -21,7 +24,6 @@ function Inicio() {
                 <li>Contate-nos</li>
             </S.Ul>
         </S.Nav>
-
         <S.Main>
             <S.Portal>
                 <h2>PORTAL DO PACIENTE</h2>
@@ -29,7 +31,8 @@ function Inicio() {
                     <S.categoria src={ficha} alt="" />
                     <p>AGENDAMENTO</p>
                     </S.indice>
-                <S.indice>
+                    {openModal && <Modal closeModal={setOpenModal}/>}
+                <S.indice className="openModalBtn" onClick={() =>{setOpenModal(true)}}>
                     <S.categoria  src={exame}alt="" />
                     <p>MINHAS CONSULTAS</p>
                 </S.indice>
