@@ -12,7 +12,7 @@ function Modal({closeModal}){
                     <h2>MINHAS CONSULTAS</h2>
                     <S.Tbutton onClick={()=> closeModal(false)}> X </S.Tbutton>
                 </S.selection>
-                    <S.Btn className="titleCloseBtn">
+                    <div className="titleCloseBtn">
                     <S.Body className="body"></S.Body>
                     <S.option>
                         <h3>Agendadas</h3>
@@ -32,7 +32,7 @@ function Modal({closeModal}){
                         <h4> 05/11 Histórico do Exame</h4>
                     </S.dados>
                 </S.grupo>
-                </S.Btn>
+                </div>
             </S.Conteiner>  
          </S.Background>
 
