@@ -62,3 +62,29 @@ export const dados = styled.div`
     margin-top: 2rem;
     font-size: 1.3rem;
 `
+export const button = styled.div`
+    width: 7rem;
+    height: 2rem;
+    background-color: #4677B6;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+`
+
+export const barra = styled.div`
+    background-color: #D5D8DF;
+    display: flex;
+    align-items: center;
+    border-radius: 5%;
+`
+export const Input = styled.input`
+    background-color: transparent;
+    border: transparent;
+`
+
+export const Img = styled.img`
+    width: 1.5rem;
+    height: 1.5rem;
+`

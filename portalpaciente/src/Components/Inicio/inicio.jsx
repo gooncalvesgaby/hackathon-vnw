@@ -6,11 +6,14 @@ import ficha from "../../assets/ficha.png"
 import teste from "../../assets/teste.png"
 import vacina from "../../assets/vacina.jpg"
 import Modal from "../Modal/modal.jsx"
+import Modal2 from "../Modal/modal2.jsx"
 
 
 function Inicio() {
 
     const [openModal, setOpenModal] = useState(false)
+
+    const [openModal2, setOpenModal2] = useState(false)
 
     return(
         <section>  
@@ -24,10 +27,11 @@ function Inicio() {
         <S.Main>
             <S.Portal>
                 <h2>PORTAL DO PACIENTE</h2>
-                    <S.indice>
+                    <S.indice className="openModalBtn" onClick={() =>{setOpenModal2(true)}}>
                     <S.categoria src={ficha} alt="" />
                     <p>AGENDAMENTO</p>
                     </S.indice>
+                    {openModal2 && <Modal2 closeModal={setOpenModal2}/>}
                     {openModal && <Modal closeModal={setOpenModal}/>}
                 <S.indice className="openModalBtn" onClick={() =>{setOpenModal(true)}}>
                     <S.categoria  src={exame}alt="" />

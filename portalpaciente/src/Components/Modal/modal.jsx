@@ -1,4 +1,3 @@
-import {useState} from "react"
 import * as S from "./modalstyle.jsx"
 
 function Modal({closeModal}){

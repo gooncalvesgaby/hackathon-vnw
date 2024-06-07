@@ -35,8 +35,6 @@ export const Portal = styled.section`
     border-radius:15%;
 `
 
-export const button = styled.button`
-`
 export const indice = styled.button`
     background-color: white;
     width: 10rem;
