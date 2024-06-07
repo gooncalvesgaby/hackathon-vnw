@@ -1,9 +1,54 @@
-import React from "react"
+import React, { useState } from "react"
 import * as S from "./cadastroStyle.jsx"
 import Logo from "../../assets/logo-ds.png"
+import { useNavigate } from "react-router-dom";
 
- function Cadastro (){
+function Cadastro (){
+
+const[name, setName] = useState("");
+const[email, setEmail] = useState("");
+const[cpf, setCpf] = useState("");
+const[password, setPassword] = useState("");
+const[confirmasenha, setConfirmasenha] = useState("");
+const navigate = useNavigate();
+
+const handleSenha = (event) => {
+    setConfirmasenha(event.target.value)
+}
+
+
+const handleCpf = (event) => {
+    setCpf(event.target.value.replace(/\D/, ''))
+}
+
+const handlePassword = (event) => {
+    setPassword(event.target.value)
+}
+
+const loginForm = (event) => {
+    event.preventDefault()
+    if(cpf.length < 11 || !cpf || cpf == '' || cpf.length > 11) {
+        alert("informe um cpf valido");
+        return;
+    }
+
+    if(password == "") {
+        alert("digite sua senha")
+        return;
+    }
+
+    if(confirmasenha != handlePassword){
+        alert("senhas precisam ser iguais")
+        return;
+    }
+
+    navigate('/portal')
+
+
+}
+
     return(
+        <>
         <S.Main>
          <section>
             <div>
@@ -12,22 +57,23 @@ import Logo from "../../assets/logo-ds.png"
 
             </div>
          </section>
-         <S.Forms>
+         <S.Forms onSubmit={loginForm}>
          <h1>FORMULARIO CADASTRO </h1>
           <label >NOME</label>
-          <input type="text" placeholder="Nome Completo"/>
+          <input value={name} type="text" placeholder="Nome Completo" onChange={handleSenha}/>
           <label >EMAIL</label>
-          <input type="text" placeholder="Email"/>
+          <input value={email} type="text" placeholder="Email"/>
           <label >CPF</label>
-          <input type="text" placeholder="CPF"/>
+          <input value={cpf} type="text" placeholder="CPF" onChange={handleCpf}/>
           <label >SENHA</label>
-          <input type="password" placeholder="Senha"/>
+          <input value={password} type="password" placeholder="Senha" onChange={handlePassword}/>
           <label >CONFIRMAR SENHA</label>
-          <input type="password" placeholder="Confirme sua senha "/>
+          <input value={confirmasenha} type="password" placeholder="Confirme sua senha " onChange={handleSenha}/>
           <button>Cadastra-se</button> 
          </S.Forms>
         </S.Main>
+        </>
     )
- }
+}
  
  export default Cadastro
