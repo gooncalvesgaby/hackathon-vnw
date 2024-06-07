@@ -15,12 +15,18 @@ export const Ul = styled.ul`
     align-items: center;
     font-size: 1.5rem;
 `
-export const Main = styled.section`
+export const Main = styled.main`
     display: flex;
     justify-content: space-between;
     height: 100vh;
     width: 100%;
     align-items: center;
+    @media(min-width: 320px) and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        flex-direction: column-reverse;
+    }
 `
 
 export const Portal = styled.section`
@@ -33,6 +39,21 @@ export const Portal = styled.section`
     margin-left: 2rem;
     justify-content: space-around;
     border-radius:15%;
+    @media(min-width: 320px) and (max-width: 768px){
+        width: 65vw;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+`
+
+export const Section = styled.section`
+@media(min-width: 320px) and (max-width: 768px){
+    img{
+        width: 100vw;
+        height: 35vh;
+    }
+}
 `
 
 export const indice = styled.button`
@@ -46,12 +67,24 @@ export const indice = styled.button`
     justify-content: center;
     border-radius:20%;
     font-size: 14px;
+    @media(min-width: 320px) and (max-width: 768px){
+        width: 5.8rem;
+        height: 6.1rem;
+        align-items: center;
+        font-size: 0.7rem;
+        font-weight: 700;
+        
+    }
 `
 
 export const categoria = styled.img`
     margin-bottom: 1rem;
     width: 4rem;
     height: 4rem;
+    @media(min-width: 320px) and (max-width: 768px){
+        width: 3rem;
+        height: 3rem;
+    }
 `
 export const Footer = styled.footer`
     background-color:  #4677B6;
@@ -61,4 +94,8 @@ export const Footer = styled.footer`
     justify-content: center;
     font-size: 1.3rem;
     color: white;
+    @media(min-width: 320px) and (max-width: 768px){
+        height: 10vh;
+        font-size: 0.8rem;
+    }
 `
