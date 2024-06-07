@@ -31,7 +31,6 @@ function Cadastro() {
     }
 
     const handleEmail = (event) => {
-        console.log(emailRegex.test(event.target.value));
         setEmail(event.target.value)
 
     }
@@ -46,7 +45,10 @@ function Cadastro() {
             alert("digite seu nome completo")
         }
 
-        // if(email)
+        if(emailRegex.test(event.target.value)){
+            alert("Digite um email valido")
+            return;
+        }
 
         if (cpf.length < 11 || !cpf || cpf == '' || cpf.length > 11) {
             alert("informe um cpf valido");
