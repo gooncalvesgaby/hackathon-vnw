@@ -70,7 +70,6 @@ const loginForm = (event) => {
           <label >CONFIRMAR SENHA</label>
           <input value={confirmasenha} type="password" placeholder="Confirme sua senha " onChange={handleSenha}/>
           <button>Cadastra-se</button> 
-          </S.Div>
          </S.Forms>
         </S.Main>
         </>
