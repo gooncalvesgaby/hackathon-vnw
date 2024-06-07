@@ -55,6 +55,7 @@ border: 0;
 height: 15%;
 border-radius: 20px;
 background-color: transparent;
+border: black solid 1px;
  `
 
 export const Open = styled.button`

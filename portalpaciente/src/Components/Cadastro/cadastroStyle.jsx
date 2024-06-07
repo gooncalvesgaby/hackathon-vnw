@@ -10,9 +10,6 @@ align-items: center;
 justify-content: center;
 background-repeat: no-repeat;
 background-size: 100%;
-
-
-
 `
 
 export const Forms = styled.section`
@@ -57,11 +54,17 @@ color:white;
 }
 
 `
-export const Div = styled.div`
+export const Divform = styled.div`
 display: flex;
 justify-content: space-between;
 flex-direction: column;
 margin: 3rem;
 height: 85%;
-width: 35vw;
+width: 40vw;
+background-color: #DBDBDB;
+padding: 5%;
+border-radius: 10%;
+`
+
+export const Formulario = styled.form`
 `

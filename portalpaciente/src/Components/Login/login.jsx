@@ -35,6 +35,11 @@ function Login() {
 
 
     }
+
+    function signIn() {
+        navigate('/cadastro')
+
+    }
  
 
     return (
@@ -57,12 +62,12 @@ function Login() {
                         </label> 
                         <a href="#">Esqueceu a senha</a>
                     </S.Div2>
-                    <S.Open to="/Inicio">Entrar</S.Open>
+                    <S.Open type="submit ">Entrar</S.Open>
                     <S.Cadastro>
                         <p>
                             Não possui cadastro?
                         </p>
-                        <button type="submit">Cadastre-se</button>
+                        <button onClick={signIn} type="button">Cadastre-se</button>
                     </S.Cadastro>
                     
                 </S.Form>
