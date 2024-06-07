@@ -51,19 +51,20 @@ function Login() {
                     
                         <S.Input value={password} type="password" placeholder="Senha" onChange={handlePassword}/>
                     
-                    <div>
+                    <S.Div2>
                         <label>
                             <input  type="checkbox" />Lembre de mim
                         </label> 
                         <a href="#">Esqueceu a senha</a>
-                    </div>
-                    <button to="/Inicio">Entrar</button>
-                    <div>
+                    </S.Div2>
+                    <S.Open to="/Inicio">Entrar</S.Open>
+                    <S.Cadastro>
                         <p>
-                            Não possui cadastro <a href="#">Cadastre-se</a>
+                            Não possui cadastro?
                         </p>
-                    </div>
-                    <button type="submit">Cadastre-se</button>
+                        <button type="submit">Cadastre-se</button>
+                    </S.Cadastro>
+                    
                 </S.Form>
             </S.Section>
         </main>

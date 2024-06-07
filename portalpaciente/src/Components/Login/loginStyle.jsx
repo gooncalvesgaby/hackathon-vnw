@@ -28,9 +28,54 @@ align-items: center;
 flex-wrap: wrap;
 width: 30vw;
 padding: 5em;
-border: solid red;
+border: 0;
 height: 80vh;
 margin-left: 3rem;
 background-color: #F2F2F2;
 border-radius: 40px;
+`
+
+export const Input = styled.input`
+width: 100vw;
+border: 0;
+height: 15%;
+border-radius: 20px;
+background-color: transparent;
+
+
+ `
+
+export const Open = styled.button`
+border-radius: 40px;
+width: 100vw;
+height: 3rem;
+background-color: #2787BD;
+color: #fff;
+font-size: 1.5em;
+`
+
+export const Cadastro = styled.div`
+width: 100%;
+height: 5rem;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-around;
+flex-direction: column;
+
+
+button {
+    border-radius: 30px;
+    width: 9vw;
+    height: 2.5rem;
+    background-color: #2787BD;
+    color: #fff;
+}
+`
+
+export const Div2 = styled.div`
+font-size: 0.8em;
+display: flex;
+justify-content: space-between;
+width: 100%;
 `
