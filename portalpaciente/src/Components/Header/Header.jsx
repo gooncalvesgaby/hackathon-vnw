@@ -12,7 +12,7 @@ function Header() {
             <   S.H1>Central de atendimento</S.H1>
             <S.DivMenu>
                 <S.ImgMenu src={Ajuda} alt="imagem para auxilio" />
-                <S.ImgMenu src={Perfil} alt="imagem com esboço de um perfil" />
+                        <S.ImgMenu src={Perfil} alt="imagem com esboço de um perfil" />
             </S.DivMenu>
         </S.Div>
         

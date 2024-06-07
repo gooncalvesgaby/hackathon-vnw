@@ -1,8 +1,5 @@
 import {useState} from "react"
 import * as S from "./inicioStyle.jsx"
-import Logo from "../../assets/logo-ds.png"
-import Ajuda from "../../assets/ajuda.png"
-import Perfil from "../../assets/perfil.png"
 import acordo from "../../assets/acordo.png"
 import exame from "../../assets/exame.png"
 import ficha from "../../assets/ficha.png"

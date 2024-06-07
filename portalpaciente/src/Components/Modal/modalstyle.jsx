@@ -22,9 +22,6 @@ export const Conteiner = styled.div`
     box-shadow: black 0px 5px 15px;
     padding: 25px;
 `
-export const Btn = styled.div`
-
-`
 
 export const selection = styled.div`
     display: flex;

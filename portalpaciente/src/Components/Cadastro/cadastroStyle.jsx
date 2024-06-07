@@ -1,23 +1,17 @@
 import styled from "styled-components"
 
- 
+
 export const Main = styled.main`
 display:flex;
 flex-direction: column;
 width: 100%;
-height: 55vh;
-background-color:#1C304A;
+height: 90vh;
 align-items: center;
-justify-content: space-around;
-text-align: center;
+justify-content: center;
+background-repeat: no-repeat;
+background-size: 100%;
 
-button{
-background-color: white;
-width: 25vw;
-height: 8vh;
-border-radius: 8px;
-font-weight:900;
-}
+
 
 `
 
@@ -25,12 +19,49 @@ export const Forms = styled.section`
 
 display: flex;
 flex-direction: column;
-width: 45%;
-background-color:#F2F2F2;
-`
-export const Formulario = styled.div` 
-display:flex;
-padding: 5%;
-margin: 3px;
+width: 45vw;
+background-color:#DBDBDB;
+height: 70vh;
+border-radius: 10px;
+justify-content: center;
+margin-top: 2rem;
 
+
+button{
+background-color: #4677B6;
+width: 10vw;
+height: 8vh;
+border-radius: 8px;
+font-weight:900;
+color:white;
+
+
+}
+
+@media(min-width: 320px) and (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    background-color: #4677B6;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    
+
+    button{
+        background-color: white;
+        color:black;
+        width: 15vw;
+    }
+
+}
+
+`
+export const Div = styled.div`
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+margin: 3rem;
+height: 85%;
+width: 35vw;
 `
