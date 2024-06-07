@@ -5,7 +5,7 @@ export const Main = styled.main`
 display:flex;
 flex-direction: column;
 width: 100%;
-height: 85vh;
+height: 55vh;
 background-color:#1C304A;
 align-items: center;
 justify-content: space-around;
@@ -27,4 +27,10 @@ display: flex;
 flex-direction: column;
 width: 45%;
 background-color:#F2F2F2;
+`
+export const Formulario = styled.div` 
+display:flex;
+padding: 5%;
+margin: 3px;
+
 `
