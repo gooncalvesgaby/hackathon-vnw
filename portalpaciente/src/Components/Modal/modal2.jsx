@@ -3,6 +3,7 @@ import lupa from "../../assets/lupa.png"
 
 function Modal({ closeModal }) {
 
+
     return (
         <S.center>
             <S.Background className="modalBackground">
