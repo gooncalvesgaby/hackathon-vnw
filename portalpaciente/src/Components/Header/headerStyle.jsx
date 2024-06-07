@@ -12,6 +12,11 @@ align-items: center;
 export const Img = styled.img`
 width: 11%;
 margin-top: 3px;
+
+@media(min-width: 320px) and (max-width: 768px){
+    height: 15vh;
+    width: 28vw;
+}
 `
 
 export const ImgMenu = styled.img`
@@ -25,6 +30,10 @@ cursor: pointer;
 
 export const H1 = styled.h1`
 color: white;
+
+@media(min-width: 320px) and (max-width: 768px){
+    display: none;
+}
 `
 
 export const DivMenu = styled.div`
