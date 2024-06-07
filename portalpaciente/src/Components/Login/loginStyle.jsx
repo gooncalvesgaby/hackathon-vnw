@@ -10,6 +10,7 @@ background-color: #78B4D6;
 img {
 height: 13vh;
 margin-left: 2rem;
+
 }
 `
 
@@ -20,6 +21,12 @@ background-size: cover;
 font-family: Helvetica;
 display: flex;
 align-items: center;
+
+@media(min-width: 320px) and (max-width: 768px){
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
 `
 
 export const Form = styled.form`
@@ -33,6 +40,13 @@ height: 80vh;
 margin-left: 3rem;
 background-color: #F2F2F2;
 border-radius: 40px;
+
+@media(min-width: 320px) and (max-width: 768px){
+    width: 60vw;
+    height: 60%;
+    display: flex;
+   
+}
 `
 
 export const Input = styled.input`
@@ -41,8 +55,6 @@ border: 0;
 height: 15%;
 border-radius: 20px;
 background-color: transparent;
-
-
  `
 
 export const Open = styled.button`
@@ -70,6 +82,11 @@ button {
     height: 2.5rem;
     background-color: #2787BD;
     color: #fff;
+ 
+    @media(min-width: 320px) and (max-width: 768px){
+        width: 20vw;
+    }
+
 }
 `
 
@@ -79,3 +96,4 @@ display: flex;
 justify-content: space-between;
 width: 100%;
 `
+
