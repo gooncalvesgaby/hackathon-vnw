@@ -15,7 +15,7 @@ margin-left: 2rem;
 `
 
 export const Section = styled.section`
-height: 85vh;
+height: 90vh;
 background-position: center;
 background-size: cover;
 font-family: Helvetica;
