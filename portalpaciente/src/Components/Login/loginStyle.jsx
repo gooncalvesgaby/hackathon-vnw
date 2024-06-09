@@ -27,7 +27,7 @@ align-items: center;
     justify-content: center;
     height: 100vh;
     align-items: center;
-    border: solid red ;
+    
 }
 `
 
@@ -50,7 +50,7 @@ border-radius: 40px;
     align-items: center;
     font-size: 0.7rem;
     justify-content: center;
-    border: solid red;
+   
 }
 `
 
@@ -112,8 +112,10 @@ width: 100%;
 
 @media(min-width: 320px) and (max-width: 768px){
     font-size: 0.5rem;
-    border: solid red;
     width: 100%;
+    height: 5vh;
+    align-items:center;
+    
 }
 `
 

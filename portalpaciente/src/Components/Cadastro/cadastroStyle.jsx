@@ -42,6 +42,7 @@ color:white;
     background-color: #4677B6;
     background-repeat: no-repeat;
     background-size: 100%;
+    
 
     
 
@@ -64,7 +65,15 @@ width: 40vw;
 background-color: #DBDBDB;
 padding: 5%;
 border-radius: 10%;
+
+@media(min-width: 320px) and (max-width: 768px){
+    width:65vw;
+    height: 70vh;
+    
+    
+}
 `
 
 export const Formulario = styled.form`
+
 `
