@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import * as S from "./cadastroStyle.jsx"
-import Logo from "../../assets/logo-ds.png"
 import { useNavigate } from "react-router-dom";
 
 function Cadastro() {
@@ -39,7 +38,6 @@ function Cadastro() {
 
     const signinForm = (event) => {
         event.preventDefault()
-        // preventDefault é so para nao mudar de pagina
 
         if (name.split(" ").length < 2) {
             alert("digite seu nome completo")
@@ -76,20 +74,13 @@ function Cadastro() {
             <S.Main>
                 <S.Formulario onSubmit={signinForm}>
                     <S.Divform>
-                        <h1>FORMULARIO CADASTRO </h1>
-                        <label >NOME</label>
-                        <input value={name} type="text" placeholder="Nome Completo" onChange={handleName}/> 
-                        {/* toda vez que o usuario digita algo no input é disparado e evento onChange
-                        toda vez que o onChange é disparado ele ta chamando a funcao que eu mandei pra ele */}
-                        <label >EMAIL</label>
-                        <input value={email} type="email" placeholder="Email" onChange={handleEmail} />
-                        <label >CPF</label>
-                        <input value={cpf} type="text" placeholder="CPF" onChange={handleCpf} />
-                        <label >SENHA</label>
-                        <input value={password} type="password" placeholder="Senha" onChange={handlePassword} />
-                        <label >CONFIRMAR SENHA</label>
-                        <input value={confirmasenha} type="password" placeholder="Confirme sua senha " onChange={handleSenha} />
-                        <button type="submit">Cadastra-se</button>
+                        <S.H1>FORMULÁRIO CADASTRO </S.H1>
+                        <S.Input value={name} type="text" placeholder="Nome Completo" onChange={handleName}/> 
+                        <S.Input value={email} type="email" placeholder="Email" onChange={handleEmail} />
+                        <S.Input value={cpf} type="text" placeholder="CPF" onChange={handleCpf} />
+                        <S.Input value={password} type="password" placeholder="Senha" onChange={handlePassword} />
+                        <S.Input value={confirmasenha} type="password" placeholder="Confirme sua senha " onChange={handleSenha} />
+                        <S.Button type="submit">Cadastra-se</S.Button>
                     </S.Divform>
                 </S.Formulario>
             </S.Main>

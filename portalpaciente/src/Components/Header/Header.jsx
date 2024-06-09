@@ -11,7 +11,6 @@ function Header() {
     return(
          <S.Div>
             <S.Img src={Logo} alt="imagem de fundo" />
-            <   S.H1>Central de atendimento</S.H1>
             <S.DivMenu>
                 <S.ImgMenu src={Ajuda} alt="imagem para auxilio" />
                     <S.dropdown className="dropdown">
