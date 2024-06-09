@@ -50,6 +50,7 @@ border-radius: 40px;
     align-items: center;
     font-size: 0.7rem;
     justify-content: center;
+    background-color: white;
    
 }
 `

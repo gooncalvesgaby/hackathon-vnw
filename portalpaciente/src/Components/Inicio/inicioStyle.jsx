@@ -21,6 +21,7 @@ export const Main = styled.main`
     height: 100vh;
     width: 100%;
     align-items: center;
+    background-color: white;
     @media(min-width: 320px) and (max-width: 768px){
         display: flex;
         flex-direction: column;

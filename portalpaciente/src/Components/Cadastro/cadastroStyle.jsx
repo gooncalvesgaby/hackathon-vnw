@@ -10,6 +10,7 @@ align-items: center;
 justify-content: center;
 background-repeat: no-repeat;
 background-size: 100%;
+background-color: white;
 `
 
 export const Forms = styled.section`
