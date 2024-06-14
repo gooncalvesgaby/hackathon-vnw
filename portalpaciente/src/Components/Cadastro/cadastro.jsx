@@ -69,17 +69,17 @@ function Cadastro() {
 
     }
 
-    return (
+    return(
         <>
             <S.Main>
                 <S.Formulario onSubmit={signinForm}>
                     <S.Divform>
-                        <S.H1>FORMULÁRIO CADASTRO </S.H1>
+                        <S.H1>FORMULÁRIO CADASTRO</S.H1>
                         <S.Input value={name} type="text" placeholder="Nome Completo" onChange={handleName}/> 
                         <S.Input value={email} type="email" placeholder="Email" onChange={handleEmail} />
                         <S.Input value={cpf} type="text" placeholder="CPF" onChange={handleCpf} />
                         <S.Input value={password} type="password" placeholder="Senha" onChange={handlePassword} />
-                        <S.Input value={confirmasenha} type="password" placeholder="Confirme sua senha " onChange={handleSenha} />
+                        <S.Input value={confirmasenha} type="password" placeholder="Confirme sua senha" onChange={handleSenha} />
                         <S.Button type="submit">Cadastra-se</S.Button>
                     </S.Divform>
                 </S.Formulario>
